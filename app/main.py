@@ -1,4 +1,4 @@
-from custom_dict import CustomDict
+from app.custom_dict import CustomDict
 
 
 class Dictionary(CustomDict):

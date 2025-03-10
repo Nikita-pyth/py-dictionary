@@ -56,8 +56,8 @@ class CustomDict:
                 self.dictionary[index] = None
                 self._used_cells_counter -= 1
                 return
-        raise KeyError(f"Key {key} not in the dictionary"
-                       f"unable to delete from the hash table.")
+        raise KeyError(f"Key {key} not found in the dictionary."
+                       f" Unable to delete.")
 
     def get(self, key: Hashable, default: Any = None) -> Any:
         try:
@@ -75,8 +75,8 @@ class CustomDict:
                 self._used_cells_counter -= 1
                 return temp
         if default is None:
-            raise KeyError(f"Key {key} not in the dictionary"
-                           f"unable to pop from the hash table.")
+            raise KeyError(f"Key {key} not found in the dictionary."
+                           f" Unable to pop.")
 
         return default
 

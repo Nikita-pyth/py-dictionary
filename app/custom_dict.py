@@ -1,6 +1,6 @@
 from typing import Any, Hashable
 
-from node import Node
+from app.node import Node
 
 
 class CustomDict:
